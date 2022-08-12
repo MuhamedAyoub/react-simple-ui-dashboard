@@ -1,0 +1,65 @@
+@use "../../utls/styles/colors" as *;
+.widgete {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: space-between;
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  -moz-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  height: 150px;
+  min-width: 160px;
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .title {
+      font-size: 15px;
+      font-weight: bold;
+      color: gray;
+    }
+    .counter {
+      font-size: 28px;
+      font-weight: 300;
+    }
+    .link {
+      font-size: 12px;
+      border-bottom: 1px solid gray;
+      cursor: pointer;
+    }
+    .percentage {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      &.positive {
+        color: green;
+      }
+      &.negative {
+        color: red;
+      }
+    }
+    .icon {
+      text-align: center;
+      font-size: 18px;
+      padding: 10px;
+      background-color: rgba($color: $icon-color, $alpha: 0.51);
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      align-self: flex-end;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .widgete {
+    max-width: 250px;
+  }
+}

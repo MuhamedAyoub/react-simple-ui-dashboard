@@ -1,0 +1,22 @@
+.home {
+  flex: 6;
+  .widget,
+  .charts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .charts {
+    padding: 5px 20px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .widget {
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+}

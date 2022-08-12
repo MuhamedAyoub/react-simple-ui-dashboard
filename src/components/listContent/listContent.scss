@@ -1,0 +1,16 @@
+.list {
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  -moz-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 10px;
+  margin: 15px;
+  .title {
+    font-weight: 500;
+    color: gray;
+    margin-bottom: 15px;
+  }
+}

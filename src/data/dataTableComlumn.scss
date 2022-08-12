@@ -1,0 +1,15 @@
+.cellWithImg {
+  display: flex;
+  align-items: center;
+  .celImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+}

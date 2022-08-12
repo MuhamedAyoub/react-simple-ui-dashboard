@@ -1,0 +1,38 @@
+.new {
+  flex: 6;
+
+  .top,
+  .bottom {
+    @extend %commun;
+    margin: 20px;
+    display: flex;
+  }
+
+  .left {
+    flex: 1;
+    text-align: center;
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      object-fit: cover; // !  يحسنلك الصورة
+    }
+  }
+  .right {
+    flex: 2;
+  }
+}
+
+%commun {
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}

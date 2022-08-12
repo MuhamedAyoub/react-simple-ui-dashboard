@@ -1,0 +1,85 @@
+@use "../../utls//styles/colors.scss" as *;
+.sidebar {
+  border-right: 0.5px solid lightgray;
+  min-height: 100vh;
+  background-color: white;
+  flex: 1;
+
+  .top {
+    //    background-color:     ;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: $logo-color;
+    }
+  }
+  .center {
+    //! Start List
+    ul {
+      list-style: none;
+      .title {
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: bold;
+        color: #999;
+        margin-top: 15px;
+        margin-bottom: 10px;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        cursor: pointer;
+        &:hover {
+          background-color: $bg-hover;
+        }
+        margin-bottom: 10px;
+        .icon {
+          font-size: 20px;
+          color: $icon-color;
+        }
+        span {
+          font-size: 16px;
+          font-family: 600;
+          color: #888;
+          margin-left: 10px;
+        }
+      }
+    }
+    padding-left: 10px;
+  }
+  //! End List
+  hr {
+    height: 0px;
+    border: 0.5px solid lightgray;
+  }
+  //* Start Colors
+  .bottom {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    .color-option {
+      width: 20px;
+      height: 20px;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      cursor: pointer;
+      border: 1px solid $icon-color;
+      margin: 5px;
+      &:nth-child(1) {
+        background-color: $white-mode;
+      }
+      &:nth-child(2) {
+        background-color: $dark-mode;
+      }
+    }
+  }
+  //* End Colors
+}
